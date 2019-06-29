@@ -25,7 +25,7 @@
       <tr>
         <td>3</td>
         <td>ㅎㅎ</td>
-        <router-link to="/NoticeList">ㅎㅎㅎ</router-link>
+        <router-link to="/NoticeList">개인과제-뷰</router-link>
       </tr>
       <tr>
         <td>4</td>
