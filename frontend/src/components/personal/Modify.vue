@@ -20,21 +20,32 @@
 <div class="notnav">
 
       <div class="allContent">
-           <div>
+           <div class="title">             
             <input type="textarea" class="title" value="제목">
            </div>
             <div class="exeptTitle">
-              <div>
-            <textarea class="content" value="내용"  style="border:none;"></textarea>
+              <div class="area">                                 
+                <input type="textarea" class="cor_name" value="기업명">
+                <input type="textarea" class="jobkind" value="직종 및 직급">
+                <div >
+                  <textarea class="content" id="content1" >모집분야 및 자격요건
+                  </textarea>
+                  <textarea class="content" id="content2" >근무조건
+                  </textarea>
+                  <textarea class="content" id="content3" >전형절차
+                  </textarea>
+                  <textarea class="content" id="content4" >접수방법
+                  </textarea>
+                </div>
               </div>            
             <div class="tagclass">
-            <input type="textarea" class="tag"  value="태그" style="border:none;">
-              
+            <input type="textarea" class="tag"  value="태그1" >
+             <input type="textarea" class="tag"  value="태그2">
+              <input type="textarea" class="tag"  value="태그3" >  
             </div>
                 
         </div>
     </div>
-    
     <div class="btn">
          <a @click="modify"  class="btn btn-default">수정</a>
           <router-link to="/noticeList"  class="btn btn-default">취소</router-link>
@@ -59,32 +70,31 @@ export default {
 
 <style scoped>
 #grid{
-  display:grid;
+    display:grid;
     grid-template-columns:20% 1fr;
 }
 .nav{  
-  background-color: #c9e1f5;  
-  height:1200px;
-  padding-top:20%;
-  padding-bottom:50%;
-   margin:0;  
-   font-size: 35px;
-   font-weight: 800;
-   text-align: right;
-   padding-right:15%;
+    background-color: #c9e1f5;  
+    height:1200px;
+    padding-top:20%;
+    padding-bottom:50%;
+    margin:0;  
+    font-size: 35px;
+    font-weight: 800;
+    text-align: right;
+    padding-right:15%;
    }
 ul#navi{
   list-style-type: none; 
 }
 #myname{
-  font-size: 30px;
-  margin:10%;
-  color:  rgb(66, 65, 65);
-   /* text-shadow: 0.5px 0 rgb(9, 43, 87); */
-   
+    font-size: 30px;
+    margin:10%;
+    color:  rgb(66, 65, 65);
+    /* text-shadow: 0.5px 0 rgb(9, 43, 87); */   
 }
 .p{
-  margin:20px;
+   margin:20px;
 }
 #r2,#r3,#r4,#r5{
     color: rgb(66, 65, 65);
@@ -92,8 +102,8 @@ ul#navi{
    
 }
 #r1{
-  color: rgb(41, 132, 250);
-  margin:10%;  
+    color: rgb(41, 132, 250);
+    margin:10%;  
 }
 
 
@@ -115,9 +125,10 @@ ul#navi{
     font-weight: bold;
     color: rgb(8, 84, 184);
     width:100%;
+    border:none;
 }
 .area{
-     margin-bottom:10px;
+     margin-bottom:10px;     
     
 }
 .content{
@@ -125,18 +136,22 @@ ul#navi{
      font-size:15px;
      font-weight: bold;
      width:100%;
-     height:500px;;
+     height:130px;;
+     border:none;
 }
 
 .tag{    
      color:rgb(90, 88, 88);
-     font-weight: bold;
-    margin-top:20px;
-     margin-bottom:20px;
-      width:100%;
+     font-weight: bold;     
+     width:15%;
+     border:none;
+     font-size:15px;
 }
-
-
+.cor_name, .jobkind{
+      border:none;
+      width:100%;
+      font-size:15px;
+}
 
 
 </style>

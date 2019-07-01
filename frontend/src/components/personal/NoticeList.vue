@@ -28,9 +28,10 @@
        
       </div> 
 
-
+ <!-- 첫번째 줄 -->
   <div class="row">
     <span class="row1">
+       <!-- 첫번째 공고 -->
       <div class="col-md-4 mb-5" id="card" ><router-link to="/noticeContent" class="noticeConR">
         <div class="cardAll">
           <div class="card-body">
@@ -46,7 +47,7 @@
         </div>
         </router-link>
       </div>
-      <!-- /.col-md-4 -->
+      <!-- 두번째 공고 -->
            <div class="col-md-4 mb-5" id="card">
         <div class="cardAll">
           <div class="card-body">
@@ -61,7 +62,7 @@
             </div>              
         </div>
       </div>
-      <!-- /.col-md-4 -->
+      <!-- 세 번째 공고-->
            <div class="col-md-4 mb-5" id="card">
         <div class="cardAll">
           <div class="card-body">
@@ -78,9 +79,10 @@
       </div>
       </span>
       
-      <!-- /.col-md-4 -->
-
+      <!-- 두번째 줄 -->
       <span class="row2">
+
+      <!-- 네 번째 공고 -->
        <div class="col-md-4 mb-5" id="card">
         <div class="cardAll">
           <div class="card-body">
@@ -95,7 +97,7 @@
             </div>              
         </div>
       </div>
-
+       <!-- 다섯 번째 공고 -->
            <div class="col-md-4 mb-5" id="card">
         <div class="cardAll">
           <div class="card-body">
@@ -110,7 +112,7 @@
             </div>              
         </div>
       </div>
-
+      <!-- 여섯 번째 공고 -->
         <div class="col-md-4 mb-5" id="card">
         <div class="cardAll">
           <div class="card-body">
